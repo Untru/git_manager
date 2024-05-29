@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновная" id="40">
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="Владелец" id="4">
+					<DataPath>Объект.Owner</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Родитель" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РодительКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="НомерВерсииПлатформы" id="31">
+					<DataPath>Объект.НомерВерсииПлатформы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия платформы 1С</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерВерсииПлатформыКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НомерВерсииПлатформыРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="КаталогRAS" id="37">
+					<DataPath>Объект.КаталогRAS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="КаталогRASКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="КаталогRASРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="StartChoice">ПутьНачалоВыбораRAS</Event>
+					</Events>
+				</InputField>
+				<InputField name="КаталогРепозитория" id="46">
+					<DataPath>1/0:d9761b3d-5dee-4f44-88c9-d12f52ac1428</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="КаталогРепозиторияКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="КаталогРепозиторияРасширеннаяПодсказка" id="48"/>
+					<Events>
+						<Event name="StartChoice">ПутьНачалоВыбораРепозитория</Event>
+					</Events>
+				</InputField>
+				<InputField name="Ответственный" id="13">
+					<DataPath>Объект.Ответственный</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<UsualGroup name="Группа1С" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступ к 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="Группа1СРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="КластерСерверов" id="7">
+							<DataPath>Объект.КластерСерверов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кластер</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КластерСерверовКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КластерСерверовРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ИмяИнформационнойБазы" id="10">
+							<DataPath>Объект.ИмяИнформационнойБазы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя ИБ</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИмяИнформационнойБазыКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ИмяИнформационнойБазыРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ИмяПользователяИнформационнойБазы" id="16">
+							<DataPath>Объект.ИмяПользователяИнформационнойБазы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя пользователя</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Wrap>false</Wrap>
+							<MultiLine>false</MultiLine>
+							<ContextMenu name="ИмяПользователяИнформационнойБазыКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ИмяПользователяИнформационнойБазыРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ПарольПользователяИнформационнойБазы" id="19">
+							<DataPath>Объект.ПарольПользователяИнформационнойБазы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль пользователя</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PasswordMode>true</PasswordMode>
+							<MultiLine>false</MultiLine>
+							<ContextMenu name="ПарольПользователяИнформационнойБазыКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПарольПользователяИнформационнойБазыРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаSQL" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступ к SQL</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаSQLРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="ИмяSQL" id="34">
+							<DataPath>Объект.ИмяSQL</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ИмяSQLКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ИмяSQLРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="ТипSQL" id="28">
+							<DataPath>Объект.ТипSQL</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТипSQLКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ТипSQLРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="ЛогинSQL" id="22">
+							<DataPath>Объект.ЛогинSQL</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ЛогинSQLКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ЛогинSQLРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="ПарольSQL" id="25">
+							<DataPath>Объект.ПарольSQL</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольSQLКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПарольSQLРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Базы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

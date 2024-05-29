@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.15">
+	<Item id="1f17fa89-aad6-494b-b68b-4fb0dc366de2">
+		<Name>add</Name>
+		<Code/>
+		<Description>add</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="49d8de94-f071-4448-807b-0e95167228be">
+		<Name>feature</Name>
+		<Code/>
+		<Description>feature</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="00ffc392-23c2-48a0-9071-339ee1c4ac24">
+		<Name>hotfix</Name>
+		<Code/>
+		<Description>hotfix</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c9d793d5-8fc4-42f0-a73a-731d6b6908c8">
+		<Name>release</Name>
+		<Code/>
+		<Description>release</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
